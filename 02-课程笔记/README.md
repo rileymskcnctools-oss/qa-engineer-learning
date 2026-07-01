@@ -1,0 +1,24 @@
+---
+tags: [课程笔记, MOC]
+created: 2026-07-01
+---
+
+# 02-课程笔记
+
+## 课程清单
+
+| 课程 | 状态 | 章节数 | 优先级 |
+|------|------|--------|--------|
+| [[软件测试基础/README\|软件测试基础]] | 🟢 进行中 | 4 | 🔴 |
+| [[Linux/README\|Linux]] | ⬜ | | 🔴 |
+| [[SQL/README\|SQL]] | ⬜ | | 🔴 |
+| [[Git/README\|Git]] | ⬜ | | 🟡 |
+| [[Python/README\|Python]] | ⬜ | | 🔴 |
+| [[Pytest/README\|Pytest]] | ⬜ | | 🔴 |
+| [[接口测试/README\|接口测试]] | ⬜ | | 🔴 |
+| [[Docker/README\|Docker]] | ⬜ | | 🟡 |
+| [[DevOps/README\|DevOps]] | ⬜ | | 🟡 |
+
+## 笔记模板
+
+见 [[_模板-课程笔记]]
