@@ -30,13 +30,13 @@ status: in_progress
 
 ### 【必须掌握】五大价值
 
-| 价值 | 对你意味着什么 |
-|------|--------------|
+| 价值       | 对你意味着什么                 |
+| -------- | ----------------------- |
 | 提高问题解决能力 | 不只是"提Bug的人"，是"能帮开发定位的人" |
-| 提升代码质量 | 定位到根因 → 从源头修复，不是打补丁 |
-| 增强团队协作 | 开发尊重能定位的测试 |
-| 提高职业竞争力 | 高级测试和初级测试的分水岭 |
-| 减少用户投诉 | 定位准确 → 修复彻底 → 不复发 |
+| 提升代码质量   | 定位到根因 → 从源头修复，不是打补丁     |
+| 增强团队协作   | 开发尊重能定位的测试              |
+| 提高职业竞争力  | 高级测试和初级测试的分水岭           |
+| 减少用户投诉   | 定位准确 → 修复彻底 → 不复发       |
 
 ### 【我的理解】
 
@@ -51,20 +51,20 @@ status: in_progress
 
 ### 【必须掌握】Bug的三种表现形式
 
-| 层次 | 条件 | 过程 | 结果 |
-|------|------|------|------|
-| 展现层 | 什么测试数据触发的？ | 什么操作步骤？ | 实际结果 vs 预期结果？ |
+| 层次  | 条件         | 过程                | 结果            |
+| --- | ---------- | ----------------- | ------------- |
+| 展现层 | 什么测试数据触发的？ | 什么操作步骤什么测试数据触发的？？ | 实际结果 vs 预期结果？ |
 
 ### 【必须掌握】常见Bug分类
 
-| 分类 | 典型表现 | 举例 |
-|------|---------|------|
-| 功能Bug | 功能不符合需求 | 点击提交没反应 |
-| 界面Bug | UI显示异常 | 按钮重叠、文字截断 |
-| 数据Bug | 数据计算/显示错误 | 金额算错、库存不准 |
-| 兼容性Bug | 特定环境才出现 | iOS正常Android崩溃 |
-| 性能Bug | 响应慢、卡顿 | 列表滚动掉帧 |
-| 崩溃Bug | 闪退、ANR | 特定操作必崩 |
+| 分类     | 典型表现      | 举例             |
+| ------ | --------- | -------------- |
+| 功能Bug  | 功能不符合需求   | 点击提交没反应        |
+| 界面Bug  | UI显示异常    | 按钮重叠、文字截断      |
+| 数据Bug  | 数据计算/显示错误 | 金额算错、库存不准      |
+| 兼容性Bug | 特定环境才出现   | iOS正常Android崩溃 |
+| 性能Bug  | 响应慢、卡顿    | 列表滚动掉帧         |
+| 崩溃Bug  | 闪退、ANR    | 特定操作必崩         |
 
 ---
 
@@ -86,11 +86,11 @@ status: in_progress
 └─────────────┘
 ```
 
-| 层级 | Web | App | 分析什么 |
-|------|-----|-----|---------|
-| View | HTML/CSS | Activity/View | 页面显示对不对？元素在不在？ |
-| Controller | JavaScript | Activity/Fragment逻辑 | 点击后响应了吗？跳转对吗？ |
-| Model | HTTP/JSON | HTTP/JSON/DB | 数据发对了吗？返回值对吗？ |
+| 层级         | Web        | App                 | 分析什么           |
+| ---------- | ---------- | ------------------- | -------------- |
+| View       | HTML/CSS   | Activity/View       | 页面显示对不对？元素在不在？ |
+| Controller | JavaScript | Activity/Fragment逻辑 | 点击后响应了吗？跳转对吗？  |
+| Model      | HTTP/JSON  | HTTP/JSON/DB        | 数据发对了吗？返回值对吗？  |
 
 #### 【面试考察】
 
@@ -122,11 +122,11 @@ status: in_progress
 
 ### 4.2 Controller层：Chrome DevTools - Console + Sources
 
-| 分析内容 | 工具 | 怎么看 |
-|---------|------|--------|
-| JS报错 | Console | 红色报错信息，点进去看源码位置 |
-| JS逻辑调试 | Sources | 打断点，逐步执行 |
-| 事件绑定 | Elements → Event Listeners | 按钮绑定了什么事件 |
+| 分析内容   | 工具                         | 怎么看             |
+| ------ | -------------------------- | --------------- |
+| JS报错   | Console                    | 红色报错信息，点进去看源码位置 |
+| JS逻辑调试 | Sources                    | 打断点，逐步执行        |
+| 事件绑定   | Elements → Event Listeners | 按钮绑定了什么事件       |
 
 > 图片位置
 
@@ -140,12 +140,12 @@ status: in_progress
 
 > 图片位置
 
-| 分析内容 | 工具 | 怎么看 |
-|---------|------|--------|
+| 分析内容 | 工具                  | 怎么看             |
+| ---- | ------------------- | --------------- |
 | 接口请求 | Network → XHR/Fetch | URL对吗？Method对吗？ |
-| 请求参数 | Headers + Payload | 参数全吗？格式对吗？ |
-| 响应结果 | Response | 状态码？返回数据结构？ |
-| 接口耗时 | Time列 | 哪个接口慢？ |
+| 请求参数 | Headers + Payload   | 参数全吗？格式对吗？      |
+| 响应结果 | Response            | 状态码？返回数据结构？     |
+| 接口耗时 | Time列               | 哪个接口慢？          |
 
 #### 【企业场景】
 
@@ -155,13 +155,13 @@ status: in_progress
 
 ### 4.4 Model层：代理抓包
 
-| 工具 | 用途 | 适合场景 |
-|------|------|---------|
-| Fiddler | HTTP抓包、断点修改 | Windows平台 |
-| Charles | HTTP/HTTPS抓包 | Mac平台，移动端抓包 |
-| mitmproxy | 命令行抓包、Python脚本 | 自动化抓包 |
-| Wireshark | 网络层协议分析 | TCP/UDP层问题 |
-| tcpdump | 命令行抓包 | 服务器端抓包 |
+| 工具        | 用途             | 适合场景        |
+| --------- | -------------- | ----------- |
+| Fiddler   | HTTP抓包、断点修改    | Windows平台   |
+| Charles   | HTTP/HTTPS抓包   | Mac平台，移动端抓包 |
+| mitmproxy | 命令行抓包、Python脚本 | 自动化抓包       |
+| Wireshark | 网络层协议分析        | TCP/UDP层问题  |
+| tcpdump   | 命令行抓包          | 服务器端抓包      |
 
 ---
 
@@ -173,11 +173,11 @@ status: in_progress
 
 > 图片位置
 
-| 分析内容 | 工具 | 怎么看 |
-|---------|------|--------|
-| UI布局 | uiautomator dump | 导出当前页面UI树 |
-| UI Diff | 截图对比 | 和设计稿像素级对比 |
-| UX交互 | 手工 | 动画、转场、手势 |
+| 分析内容    | 工具               | 怎么看       |
+| ------- | ---------------- | --------- |
+| UI布局    | uiautomator dump | 导出当前页面UI树 |
+| UI Diff | 截图对比             | 和设计稿像素级对比 |
+| UX交互    | 手工               | 动画、转场、手势  |
 
 ---
 
@@ -279,12 +279,12 @@ Step 3: 积累Bug特征库
 
 ## 工具速查表
 
-| 平台 | View层 | Controller层 | Model层 |
-|------|--------|------------|---------|
-| Web | Chrome Elements | Chrome Console + Sources | Chrome Network + Charles |
-| Android | uiautomator | logcat + Android Studio | Charles + Profiler |
-| iOS | Xcode UI Inspector | Xcode Console | Charles + Instruments |
-| 通用 | — | — | Wireshark + tcpdump |
+| 平台      | View层              | Controller层              | Model层                   |
+| ------- | ------------------ | ------------------------ | ------------------------ |
+| Web     | Chrome Elements    | Chrome Console + Sources | Chrome Network + Charles |
+| Android | uiautomator        | logcat + Android Studio  | Charles + Profiler       |
+| iOS     | Xcode UI Inspector | Xcode Console            | Charles + Instruments    |
+| 通用      | —                  | —                        | Wireshark + tcpdump      |
 
 ---
 
@@ -429,9 +429,9 @@ Step 3: 积累Bug特征库
 看接口 → Model
 ```
 
-| 口诀 | 什么意思 | 查什么 |
-|------|---------|--------|
-| 看页面 | 界面显示对不对 | DOM元素、CSS样式、布局 |
-| 看点击 | 操作后有没有反应 | Console报错、事件绑定、JS逻辑 |
-| 看接口 | 数据对不对 | Network状态码、请求参数、返回数据 |
+| 口诀  | 什么意思     | 查什么                  |
+| --- | -------- | -------------------- |
+| 看页面 | 界面显示对不对  | DOM元素、CSS样式、布局       |
+| 看点击 | 操作后有没有反应 | Console报错、事件绑定、JS逻辑  |
+| 看接口 | 数据对不对    | Network状态码、请求参数、返回数据 |
 
