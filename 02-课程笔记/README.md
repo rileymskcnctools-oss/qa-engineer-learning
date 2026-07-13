@@ -10,14 +10,14 @@ created: 2026-07-01
 | 课程 | 状态 | 章节数 | 优先级 |
 |------|------|--------|--------|
 | [[软件测试基础/README\|软件测试基础]] | 🟢 进行中 | 12 | 🔴 |
-| [[功能测试/README\|功能测试]] | 🟢 进行中 | 6 | 🔴 |
+| [[功能测试/README\|功能测试]] | 🟢 进行中 | 11 | 🔴 |
 | [[测试用例/README\|测试用例]] | ⬜ | | 🔴 |
 | [[Bug定位/README\|Bug定位]] | 🟢 进行中 | 3 | 🔴 |
 | [[白盒测试/README\|白盒测试]] | 📝 | 1 | 🔴 |
 | [[Linux/README\|Linux]] | ⬜ | | 🔴 |
 | [[SQL/README\|SQL]] | ⬜ | | 🔴 |
 | [[Git/README\|Git]] | ⬜ | | 🟡 |
-| [[Python/README\|Python]] | ⬜ | | 🔴 |
+| [[Python/README\|Python]] | 🟢 进行中 | 5 | 🔴 |
 | [[Pytest/README\|Pytest]] | ⬜ | | 🔴 |
 | [[接口测试/README\|接口测试]] | ⬜ | | 🔴 |
 | [[Docker/README\|Docker]] | ⬜ | | 🟡 |
