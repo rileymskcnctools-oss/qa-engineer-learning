@@ -17,7 +17,8 @@ created: 2026-07-01
 | [[Linux/README\|Linux]] | ⬜ | | 🔴 |
 | [[SQL/README\|SQL]] | ⬜ | | 🔴 |
 | [[Git/README\|Git]] | ⬜ | | 🟡 |
-| [[Python/README\|Python]] | 🟢 进行中 | 8 | 🔴 |
+| [[Python/README\|Python]] | 🟢 进行中 | 24 | 🔴 |
+| [[TRAE/README\|TRAE]] | 📝 | 1 | 🟡 |
 | [[Pytest/README\|Pytest]] | ⬜ | | 🔴 |
 | [[接口测试/README\|接口测试]] | ⬜ | | 🔴 |
 | [[Docker/README\|Docker]] | ⬜ | | 🟡 |
