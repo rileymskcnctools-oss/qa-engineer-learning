@@ -64,10 +64,10 @@ pytest tests/ --alluredir=reports/
 
 【易错点】
 
-| 常见错误 | 错误原因 | 正确做法 |
-|---------|---------|---------|
+| 常见错误                      | 错误原因                        | 正确做法                                   |
+| ------------------------- | --------------------------- | -------------------------------------- |
 | 认为 Pytest 和 unittest 是互斥的 | 不了解 Pytest 可以运行 unittest 用例 | Pytest 直接运行 unittest 写的 TestCase，无需改代码 |
-| 学了 Pytest 就觉得 unittest 没用 | 不理解历史遗留 | 很多老项目还是 unittest，维护时需要能读懂 |
+| 学了 Pytest 就觉得 unittest 没用 | 不理解历史遗留                     | 很多老项目还是 unittest，维护时需要能读懂              |
 
 【扩展知识】
 Pytest 常用插件：
@@ -79,7 +79,7 @@ Pytest 常用插件：
 
 【我的理解】
 > （用自己的话解释：为什么 Pytest 的 `assert` 比 unittest 的 `self.assertEqual` 更好？不只是"简洁"，从 Python 语言特性角度思考）
-
+直接用 Python 内置关键字，不需要记一堆 assertEqual/assertTrue/assertIn 方法名。语法简洁，断言简单，丰富的插件生态。
 ---
 
 ### 知识点 2：Pytest 安装与准备
@@ -132,6 +132,7 @@ pytest --version   # pytest 8.x.x
 【我的理解】
 > （在终端执行 `pytest --version`，把结果写在这里。如果失败，描述你的排查过程）
      pytest 9.0.2
+     `pip install pytest` 不需要切换到某个文件夹，它安装的是当前 Python 环境中的第三方包。实际项目中通常进入项目目录后激活虚拟环境，再安装依赖，避免不同项目之间环境冲突。
 ---
 
 ## 二、Pytest 命名规则

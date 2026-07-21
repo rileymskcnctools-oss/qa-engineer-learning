@@ -8,6 +8,8 @@
 |------|------|------|----------|
 | [[Ch01-Pytest入门]] | 简介/安装/命名规则/PyCharm配置/用例结构 | draft | |
 | [[Ch02-Pytest断言与框架结构]] | assert断言/项目结构/setup与teardown | draft | |
+| [[Ch03-Pytest参数化用例]] | 单参数/多参数/笛卡尔积/ids重命名 | draft | |
+| [[Ch04-Pytest标记测试用例]] | 自定义marker/注册/-m筛选/内置标记 | draft | |
 
 ## 核心技能矩阵
 
@@ -16,6 +18,10 @@
 | Pytest 命名规则 | ⬜ | ⭐⭐⭐⭐⭐ |
 | assert 断言六种用法 | ⬜ | ⭐⭐⭐⭐⭐ |
 | setup/teardown 四种作用域 | ⬜ | ⭐⭐⭐⭐⭐ |
+| @parametrize 参数化（单/多/笛卡尔积） | ⬜ | ⭐⭐⭐⭐⭐ |
+| 自定义 marker + -m 筛选 | ⬜ | ⭐⭐⭐⭐⭐ |
 | 测试用例三段式结构 | ⬜ | ⭐⭐⭐⭐ |
+| ids 用例重命名 + 中文修复 | ⬜ | ⭐⭐⭐ |
+| 内置标记（skip/skipif/xfail） | ⬜ | ⭐⭐⭐ |
 | PyCharm 配置 Pytest | ⬜ | ⭐⭐ |
 | 项目结构组织 | ⬜ | ⭐⭐⭐ |

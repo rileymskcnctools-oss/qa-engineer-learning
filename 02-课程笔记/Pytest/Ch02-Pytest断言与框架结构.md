@@ -80,11 +80,11 @@ def test_get_user_api():
 
 【易错点】
 
-| 常见错误 | 错误原因 | 正确做法 |
-|---------|---------|---------|
-| 一个函数里写 10 个 assert | 一个用例测太多，早的失败后面全不执行 | 一个用例聚焦一个测试点 |
+| 常见错误                              | 错误原因                                  | 正确做法                        |
+| --------------------------------- | ------------------------------------- | --------------------------- |
+| 一个函数里写 10 个 assert                | 一个用例测太多，早的失败后面全不执行                    | 一个用例聚焦一个测试点                 |
 | `assert function_call()` 忘了函数需要括号 | 写成了 `assert func`（判断函数对象是否为真，永远 True） | `assert func() == expected` |
-| `assert result = 5` 用了赋值 | Python 语法混淆 | `assert result == 5`（双等号） |
+| `assert result = 5` 用了赋值          | Python 语法混淆                           | `assert result == 5`（双等号）   |
 
 【我的理解】
 > （用 `assert` 写三个测试：一个等于、一个包含、一个带自定义错误消息。把代码和 `pytest -v` 运行结果贴在这里）
@@ -144,14 +144,14 @@ def test_addition():
 【为什么？】
 六种用法其实是 Python 比较运算符的六个维度：
 
-| 用法 | Python 机制 | 用途 |
-|------|-----------|------|
-| `==` | `__eq__` 魔术方法 | 值比较 |
-| `!=` | `__ne__` | 不等比较 |
-| `>` `<` | `__gt__` `__lt__` | 数量/顺序比较 |
-| `in` | `__contains__` | 成员检查 |
-| `is None` / 真值 | 身份/布尔判断 | 空值检查 |
-| `, "msg"` | assert 第二个参数 | 失败诊断 |
+| 用法             | Python 机制         | 用途      |
+| -------------- | ----------------- | ------- |
+| `==`           | `__eq__` 魔术方法     | 值比较     |
+| `!=`           | `__ne__`          | 不等比较    |
+| `>` `<`        | `__gt__` `__lt__` | 数量/顺序比较 |
+| `in`           | `__contains__`    | 成员检查    |
+| `is None` / 真值 | 身份/布尔判断           | 空值检查    |
+| `, "msg"`      | assert 第二个参数      | 失败诊断    |
 
 每种用法映射到 unittest 对应方法：`assertEqual`、`assertNotEqual`、`assertGreater`、`assertIn`、`assertIsNone`、`assertTrue`。但 Pytest 不强制你记这些——你会 Python 就会写断言。
 
@@ -272,12 +272,12 @@ Pytest 兼容 unittest 的 setup/teardown 用法，也提供更灵活的 fixture
 
 **setup/teardown 作用域：**
 
-| 类型 | 规则 |
-|------|------|
-| `setup_module` / `teardown_module` | 全局模块级（模块执行前后各一次） |
-| `setup_class` / `teardown_class` | 类级（类中所有用例前后各一次） |
-| `setup_function` / `teardown_function` | 函数级（类外的函数用例前后） |
-| `setup_method` / `teardown_method` | 方法级（类中每个方法前后） |
+| 类型                                     | 规则               |
+| -------------------------------------- | ---------------- |
+| `setup_module` / `teardown_module`     | 全局模块级（模块执行前后各一次） |
+| `setup_class` / `teardown_class`       | 类级（类中所有用例前后各一次）  |
+| `setup_function` / `teardown_function` | 函数级（类外的函数用例前后）   |
+| `setup_method` / `teardown_method`     | 方法级（类中每个方法前后）    |
 
 完整示例：
 ```python
@@ -452,12 +452,12 @@ fixture 比 setup/teardown 更灵活：可以跨文件共享、可以参数化�
 
 ## 今日课程总结
 
-| 模块 | 核心内容 | 面试权重 |
-|------|----------|----------|
-| assert 断言基础 | `assert` vs unittest 断言方法，断言重写机制 | ⭐⭐⭐⭐⭐ |
-| assert 六种用法 | `==` `!=` `>` `<` `in` `is` + 自定义消息 | ⭐⭐⭐⭐⭐ |
-| 项目结构 | `tests/` + `conftest.py` + `pytest.ini` | ⭐⭐⭐ |
-| setup/teardown | 四种作用域 + 执行顺序 | ⭐⭐⭐⭐⭐ |
+| 模块             | 核心内容                                    | 面试权重  |
+| -------------- | --------------------------------------- | ----- |
+| assert 断言基础    | `assert` vs unittest 断言方法，断言重写机制        | ⭐⭐⭐⭐⭐ |
+| assert 六种用法    | `==` `!=` `>` `<` `in` `is` + 自定义消息     | ⭐⭐⭐⭐⭐ |
+| 项目结构           | `tests/` + `conftest.py` + `pytest.ini` | ⭐⭐⭐   |
+| setup/teardown | 四种作用域 + 执行顺序                            | ⭐⭐⭐⭐⭐ |
 
 ## 今天没搞懂的问题
 -

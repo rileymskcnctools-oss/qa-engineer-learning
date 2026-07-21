@@ -11,6 +11,7 @@ created: 2026-07-01
 |------|------|------|--------|
 | [[功能测试/README\|功能测试实战]] | 功能测试全流程 | ⬜ | 手工+JIRA |
 | [[测试用例/README\|测试用例设计]] | 用例设计方法练习 | ⬜ | Excel/思维导图 |
+| [[pytest-practice/README\|Pytest 练习项目]] | Pytest 自动化测试 | 🟢 | Python + Pytest |
 | [[PythonCode/README\|Python 练习代码]] | Python 编程练习 | 🟢 | Python 3.x |
 
 ## 模板
