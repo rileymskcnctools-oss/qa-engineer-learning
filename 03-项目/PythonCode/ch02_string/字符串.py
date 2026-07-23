@@ -5,5 +5,5 @@
 #          where name='tom';"""     # 三引号（多行）
 # print(name)
 
-print("C:\\Users\\test")
+print("C:\\Users\\testS")
 # print("C:\Users\test")
