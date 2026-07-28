@@ -20,7 +20,7 @@ created: 2026-07-01
 | [[Python/README\|Python]] | 🟢 进行中 | 24 | 🔴 |
 | [[TRAE/README\|TRAE]] | 📝 | 1 | 🟡 |
 | [[Pytest/README\|Pytest]] | 🟢 进行中 | 13 | 🔴 |
-| [[接口测试/README\|接口测试]] | ⬜ | | 🔴 |
+| [[接口测试/README\|接口测试]] | 🟢 进行中 | 2 | 🔴 |
 | [[Docker/README\|Docker]] | ⬜ | | 🟡 |
 | [[DevOps/README\|DevOps]] | ⬜ | | 🟡 |
 
