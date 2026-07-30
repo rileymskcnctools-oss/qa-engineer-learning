@@ -1,0 +1,12 @@
+add:
+  P1:
+    data:
+      - ["s05", "tom", 22, "male"]
+      - ["s06", "jack", 30, "male"]
+      - ["s07", "lily", 18, "female"]
+      - ["s08", "ema", 16, "female"]
+    ids:
+      - add s05
+      - add s06
+      - add s07
+      - add s08

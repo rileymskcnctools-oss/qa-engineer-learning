@@ -1,6 +1,6 @@
 """
-练习代码：
-模块化
+__author__ = '霍格沃兹测试开发学社'
+__desc__ = '更多测试开发技术探讨，请访问：https://ceshiren.com/t/topic/15860'
 """
 
 # 定义学生类
@@ -92,7 +92,7 @@ class StudentManage:
             if s.sid == sid:
                 print("学号已经存在，添加失败！")
                 return "添加失败"
-        # 拼接学生信息，和原来不一样，不能拼接成字典，拼接实例
+        # 拼接学生信息
         student = Student(sid, name, age, gender)
         # 把学生信息存入列表
         self.__students.append(student)
@@ -106,13 +106,13 @@ class StudentManage:
         :return: 操作提示信息
         '''
         # 遍历学生列表
-        for s in self.__students:   #私有变量访问用self.
+        for s in self.__students:
             # 如果对应 ID 的学生存在
-            if s.sid == sid:   # 实例化属性访问方式 实例对象.属性名称
+            if s.sid == sid:
                 # 接收用户输入的学生信息
-                name = self.__get_name()  #私有方法访问用self.
-                age = self.__get_age()   #私有方法访问用self.
-                gender = self.__get_gender() #私有方法访问用self.
+                name = self.__get_name()
+                age = self.__get_age()
+                gender = self.__get_gender()
                 # 给当前学生信息重新赋值
                 s.name = name
                 s.age = age
@@ -259,6 +259,11 @@ class StudentManage:
                     break
             else:
                 print("输入的数据不合法，请输入 1-8 之间的操作编号！")
+
+
+class StudentManager:
+    pass
+
 
 if __name__ == '__main__':
 

@@ -18,7 +18,10 @@
 | [[Ch10-Pytest测试用例生命周期管理-自动生效]] | autouse=True/显式vs隐式/适用场景 | draft | 2026-07-23 |
 | [[Ch11-Pytest插件]] | 插件架构/10个常用插件/内置vs外部vs本地 | draft | 2026-07-23 |
 | [[Ch12-Pytest测试用例执行顺序自定义]] | pytest-order/@pytest.mark.order/first/last | draft | 2026-07-23 |
-| [[Ch13-Pytest测试用例并行运行与分布式运行]] | pytest-xdist/-n auto/--dist loadscope | draft | 2026-07-23 |
+|| [[Ch13-Pytest测试用例并行运行与分布式运行]] | pytest-xdist/-n auto/--dist loadscope | draft | 2026-07-23 |
+|| [[Ch14-Allure2安装与报告生成]] | Allure简介/安装/报告生成/serve vs generate | draft | 2026-07-28 |
+|| [[Ch15-Allure2用例装饰器]] | title/step/link/分类/description/severity | draft | 2026-07-28 |
+|| [[Ch16-Allure2标签与失败重试]] | xfail/skipif/fixture展示/失败重试 | draft | 2026-07-28 |
 
 ## 核心技能矩阵
 
