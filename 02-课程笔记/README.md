@@ -15,7 +15,7 @@ created: 2026-07-01
 | [[Bug定位/README\|Bug定位]] | 🟢 进行中 | 3 | 🔴 |
 | [[白盒测试/README\|白盒测试]] | 📝 | 1 | 🔴 |
 | [[Linux/README\|Linux]] | ⬜ | | 🔴 |
-| [[SQL/README\|SQL]] | ⬜ | | 🔴 |
+| [[SQL/README\|SQL]] | 🟢 进行中 | 1 | 🔴 |
 | [[Git/README\|Git]] | ⬜ | | 🟡 |
 | [[Python/README\|Python]] | 🟢 进行中 | 24 | 🔴 |
 | [[TRAE/README\|TRAE]] | 📝 | 1 | 🟡 |
