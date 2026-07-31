@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-课程笔记/接口测试/Ch05-静态文件与路由进阶.md",
+                "file": "02-课程笔记/SQL/Ch01-MySQL基础与SQL入门.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch05-静态文件与路由进阶"
+              "title": "Ch01-MySQL基础与SQL入门"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "6f61f85a7ac458f1",
   "lastOpenFiles": [
+    "02-课程笔记/接口测试/Ch05-静态文件与路由进阶.md",
     "02-课程笔记/SQL/README.md",
     "02-课程笔记/SQL/Ch01-MySQL基础与SQL入门.md",
     "02-课程笔记/SQL",
@@ -211,7 +212,6 @@
     "02-课程笔记/接口测试/Ch03-请求与响应处理.md",
     "02-课程笔记/接口测试/Ch01-接口协议基础.md",
     "02-课程笔记/接口测试/Ch02-Flask入门.md",
-    "02-课程笔记/接口测试/Ch05-静态文件与路由进阶.md",
     "05-Bug记录/BUG-001-Flask启动配置异常.md",
     "05-Bug记录/_模板-Bug.md",
     "07-每日总结/2026-07/2026-07-30.md",
