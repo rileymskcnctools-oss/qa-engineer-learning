@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-课程笔记/SQL/Ch01-MySQL基础与SQL入门.md",
+                "file": "02-课程笔记/SQL/Ch03-DML表数据操作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch01-MySQL基础与SQL入门"
+              "title": "Ch03-DML表数据操作"
             }
           }
         ]
@@ -185,9 +185,13 @@
   },
   "active": "6f61f85a7ac458f1",
   "lastOpenFiles": [
+    "02-课程笔记/SQL/Ch05-Python操作MySQL.md",
+    "02-课程笔记/SQL/Ch03-DML表数据操作.md",
+    "02-课程笔记/SQL/Ch04-DQL表查询操作.md",
+    "02-课程笔记/SQL/Ch02-DDL数据库与表操作.md",
+    "02-课程笔记/SQL/Ch01-MySQL基础与SQL入门.md",
     "02-课程笔记/接口测试/Ch05-静态文件与路由进阶.md",
     "02-课程笔记/SQL/README.md",
-    "02-课程笔记/SQL/Ch01-MySQL基础与SQL入门.md",
     "02-课程笔记/SQL",
     "03-项目/plantform_backend/templates/cors.html",
     "03-项目/plantform_backend/flask_cors_demo.py",
@@ -226,10 +230,6 @@
     "02-课程笔记/Python/Ch22-面向对象入门.md",
     "02-课程笔记/Python/Ch21-异常处理.md",
     "02-课程笔记/Python/Ch20-错误分析与调试.md",
-    "02-课程笔记/Pytest/Ch14-Allure2安装与报告生成.md",
-    "03-项目/pytest_framework-main/pytest_framework-main/README.md",
-    "03-项目/python_programming-main/python_programming-main/README.md",
-    "03-项目/PythonCode/python_programming-main/python_programming-main/README.md",
-    "03-项目/PytestProject/pytest_framework-main/pytest_framework-main/README.md"
+    "02-课程笔记/Pytest/Ch14-Allure2安装与报告生成.md"
   ]
 }
