@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>欢迎来到学生管理系统</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for stu in students %}
+    <tr>
+        <td> {{ stu.sid }}</td>
+        <td> {{ stu.name }}</td>
+        <td> {{ stu.age }}</td>
+        <td> {{ stu.gender }}</td>
+        <td>
+            <a href="/change/{{ stu.sid }}">修改</a>|
+            <form action="/delete/{{ stu.sid }}" method="POST" style="display:inline">
+                <input type="submit" value="删除">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

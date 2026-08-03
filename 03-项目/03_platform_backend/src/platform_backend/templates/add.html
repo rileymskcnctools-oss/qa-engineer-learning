@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>添加学生</h2>
+    <form action="/add" method="POST">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="请输入学生姓名" required><br>
+        <label for="age">年龄：</label>
+        <input type="text" id="age" name="age" placeholder="请输入学生年龄" required><br>
+        <label for="gender">性别：</label>
+        <input type="text" id="gender" name="gender" placeholder="请输入学生性别" required><br>
+        <input type="reset" value="清空">
+        <input type="submit" value="提交">
+    </form>
+
+
+{% endblock %}

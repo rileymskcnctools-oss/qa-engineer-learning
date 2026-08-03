@@ -1,0 +1,139 @@
+/* ----------------------------- */
+/* 基础页面样式 (base.html) */
+/* ----------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0; /* 浅橙色背景 */
+    color: #333;
+}
+
+header {
+    background-color: #FF5722; /* 橙红色 */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* ----------------------------- */
+/* 首页样式 (index.html) */
+/* ----------------------------- */
+h2 {
+    color: #FF5722; /* 橙红色 */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #FF5722; /* 橙红色 */
+    color: white;
+}
+
+table tr:hover {
+    background-color: #ffccbc; /* 浅橙红色高亮 */
+}
+
+table a {
+    color: #FF5722; /* 橙红色 */
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------- */
+/* 添加修改学生页面样式 (add.html，change.html) */
+/* ----------------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #FF5722; /* 橙红色 */
+}
+
+form input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus {
+    border-color: #FF5722; /* 橙红色 */
+    outline: none;
+}
+
+form input[type="submit"], form input[type="reset"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    background-color: #FF5722; /* 橙红色 */
+    color: white;
+}
+
+form input[type="submit"]:hover {
+    background-color: #f4511e; /* 深橙红色 */
+}
+
+form input[type="reset"] {
+    background-color: #ff7043; /* 浅橙红色 */
+    color: white;
+}
+
+form input[type="reset"]:hover {
+    background-color: #ff5722; /* 橙红色 */
+}
