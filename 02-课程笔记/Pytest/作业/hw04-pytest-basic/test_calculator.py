@@ -25,7 +25,7 @@ class TestCalculator:
     def setup_class(cls):
 
         print("\n创建Calculator实例")
-
+        # 创建 TestCalculator类属性calculator，保存Calculator()实例对象
         cls.calculator = Calculator()
 
 
@@ -61,11 +61,10 @@ class TestCalculator:
         ]
     )
     def test_add(self, a, b, expected):
-
+        # pytest 执行时test_add（），会创建当前类的实例对象test = TestCalculator(),这里的self--TestCalculator实例
+        # 执行这句代码时，python 会先查看test对象有没有calculator属性，若无，再查看TestCalculator类有无calculator属性
         result = self.calculator.add(a, b)
-
         assert result == expected
-
 
     # =========================
     # 减法参数化

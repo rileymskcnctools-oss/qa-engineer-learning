@@ -168,3 +168,115 @@ self.api.login("admin", "123456")
 ```
 
 > **一句话：`setup_class` 创建资源 → 保存为类属性 → 测试方法通过 `self` 访问调用。**
+
+---
+
+## 9. 参数化 `@parametrize` 的参数传给了谁？
+
+```python
+@pytest.mark.parametrize(
+    "balance,amount,expected",
+    [(1000, 50, 1050), (0, 200, 200), (500, 100, 600)]
+)
+def test_deposit(self, balance, amount, expected):
+```
+
+这些参数**不是传给实例对象的**，是传给**测试方法的参数**。
+
+pytest 做的事：
+
+```
+第一次执行：test_deposit(balance=1000, amount=50, expected=1050)
+第二次执行：test_deposit(balance=0,    amount=200, expected=200)
+第三次执行：test_deposit(balance=500,  amount=100, expected=600)
+```
+
+---
+
+## 10. 什么时候传给对象？
+
+在测试方法**内部**手动传：
+
+```python
+def test_deposit(self, balance, amount, expected):
+    account = BankAccount("Tom", balance)   # ← 这里才传给构造方法
+    account.deposit(amount)
+    assert account.balance == expected
+```
+
+完整流程：
+
+```
+@parametrize 提供 balance=1000, amount=50, expected=1050
+    ↓
+test_deposit 收到参数
+    ↓
+BankAccount("Tom", 1000)    ← 构造方法接收 balance
+    ↓
+account.deposit(50)         ← 业务方法接收 amount
+    ↓
+assert balance == 1050      ← 用 expected 验证
+```
+
+---
+
+## 11. 两条不同的参数路线
+
+```python
+# 路线 A：setup_class 创建固定对象
+cls.account = BankAccount("Riley", 1000)
+#            ↑ 参数直接进入 __init__
+
+# 路线 B：@parametrize 提供多组数据
+@pytest.mark.parametrize("balance,amount,expected", [...])
+def test_deposit(self, balance, amount, expected):
+    #             ↑ 参数进入测试方法
+    account = BankAccount("Tom", balance)
+    #                                ↑ 测试方法再传给构造方法
+```
+
+| | 构造方法参数 | 参数化参数 |
+|---|---|---|
+| 来源 | 代码里直接写 | `@parametrize` 装饰器 |
+| 传入目标 | `__init__(self, owner, balance)` | 测试方法 `(self, balance, ...)` |
+| 作用 | 控制对象初始状态 | 控制测试输入数据 |
+| 适用 | 固定资源（driver、session） | 多组数据（边界值、等价类） |
+
+---
+
+## 12. 一张图看清两条路线
+
+```
+                    pytest 启动
+                        |
+            ┌───────────┴───────────┐
+            ↓                       ↓
+    setup_class()              @parametrize
+            ↓                       ↓
+    cls.account =              提供多组数据
+    BankAccount(                 (1000,50,1050)
+        "Riley",1000)            (0,200,200)
+            ↓                       ↓
+    固定对象，所有测试共用       每组数据执行一次测试
+            ↓                       ↓
+            └───────────┬───────────┘
+                        ↓
+              test 方法内部
+                        ↓
+            assert 验证结果
+```
+
+---
+
+## 13. 速查
+
+```
+实例化参数：  BankAccount("Riley", 1000)
+                    ↑ 创建对象时传入
+
+参数化参数：  @pytest.mark.parametrize(...)
+                    ↑ 测试执行时传入
+
+一个控制对象状态，一个控制测试输入数据。
+```
+
