@@ -10,7 +10,7 @@ def index():
     return "<h1>Hello, Flask!</h1><p>我的第一个 Flask Web 应用</p>"
 
 
-# 另一条路由，演示路由功能
+# 另一条路由，演示路由功能---变量值自动传入视图函数的同名参数
 @app.route("/hello/<name>")
 def hello(name):
     return f"<h1>你好，{name}！</h1><p>欢迎来到 Flask 世界</p>"

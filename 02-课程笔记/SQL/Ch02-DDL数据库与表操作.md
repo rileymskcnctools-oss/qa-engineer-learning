@@ -417,11 +417,11 @@ CREATE DATABASE IF NOT EXISTS myapp_autotest;
 【扩展知识】
 其他数据库的命名差异：
 
-| 数据库 | 命名规则差异 |
-|--------|-------------|
+| 数据库        | 命名规则差异                   |
+| ---------- | ------------------------ |
 | PostgreSQL | 默认转小写，大写需双引号 `"MyTable"` |
-| Oracle | 对象名最长 30（老版本），自动转大写 |
-| SQL Server | 可以用 `[方括号]` 包裹含特殊字符的名称 |
+| Oracle     | 对象名最长 30（老版本），自动转大写      |
+| SQL Server | 可以用 `[方括号]` 包裹含特殊字符的名称   |
 
 【我的理解】
 > （试着创建以下数据库，看看哪些能成功哪些报错：
@@ -682,13 +682,13 @@ CREATE TABLE [IF NOT EXISTS] 表名 (
 
 **列属性详解：**
 
-| 属性 | 语法 | 作用 |
-|------|------|------|
-| NOT NULL | `username VARCHAR(50) NOT NULL` | 该列不允许为 NULL，插入时必须给值 |
-| DEFAULT | `status TINYINT DEFAULT 0` | 插入时如果不指定该列，使用默认值 |
-| AUTO_INCREMENT | `id INT AUTO_INCREMENT` | 自动递增，每插入一行自动 +1 |
-| PRIMARY KEY | `id INT PRIMARY KEY` | 主键约束：唯一 + 非空，一张表只能一个 |
-| COMMENT | `age TINYINT COMMENT '用户年龄'` | 给列或表添加注释 |
+| 属性             | 语法                              | 作用                   |
+| -------------- | ------------------------------- | -------------------- |
+| NOT NULL       | `username VARCHAR(50) NOT NULL` | 该列不允许为 NULL，插入时必须给值  |
+| DEFAULT        | `status TINYINT DEFAULT 0`      | 插入时如果不指定该列，使用默认值     |
+| AUTO_INCREMENT | `id INT AUTO_INCREMENT`         | 自动递增，每插入一行自动 +1      |
+| PRIMARY KEY    | `id INT PRIMARY KEY`            | 主键约束：唯一 + 非空，一张表只能一个 |
+| COMMENT        | `age TINYINT COMMENT '用户年龄'`    | 给列或表添加注释             |
 
 ```sql
 -- 完整的建表示例（学生表）

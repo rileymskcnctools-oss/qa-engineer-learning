@@ -437,7 +437,7 @@ def driver():
     """等价于 setup_method + teardown_method"""
     d = webdriver.Chrome()
     yield d        # yield 之前 = setup，yield 之后 = teardown
-    d.quit()
+    d.quit()`
 
 def test_login(driver):   # fixture 作为参数注入
     driver.get("https://example.com")

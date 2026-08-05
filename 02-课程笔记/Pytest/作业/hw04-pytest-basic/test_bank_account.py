@@ -2,11 +2,9 @@ import pytest
 from bank_account import BankAccount
 
 def setup_module():
-
     print("\n银行账户模块测试开始")
 
 def teardown_module():
-
     print("\n银行账户模块测试结束")
 
 
@@ -45,8 +43,11 @@ class TestBankAccount:
             (500,100,600)
         ]
     )
+
+    # 每次执行测试方法时提供一份数据给此方法形参部分
     def test_deposit(self,balance,amount,expected):
 
+        # account 局部变量--函数执行后生效，每次测试需要一个新的账户，因此每组数据重新创建一个新对象
         account = BankAccount(
             "Tom",
             balance
@@ -75,7 +76,6 @@ class TestBankAccount:
         )
 
         result = account.withdraw(amount)
-
         assert result == expected
 
     # ========================

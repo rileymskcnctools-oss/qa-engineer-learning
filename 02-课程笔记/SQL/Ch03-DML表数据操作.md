@@ -26,12 +26,12 @@ DML（Data Manipulation Language）数据操作语言，主要对数据库中的
 【为什么？】
 测试工程师的 DML 占比仅次于 DQL（查询）。日常工作中 DML 的使用频率：
 
-| 操作 | 频率 | 典型场景 |
-|------|------|----------|
-| INSERT | 每天 | 造测试数据 |
-| UPDATE | 经常 | 修改测试数据状态 |
-| DELETE | 每次测试后 | 清理测试数据 |
-| TRUNCATE | 偶尔 | 批量清空测试表 |
+| 操作       | 频率    | 典型场景     |
+| -------- | ----- | -------- |
+| INSERT   | 每天    | 造测试数据    |
+| UPDATE   | 经常    | 修改测试数据状态 |
+| DELETE   | 每次测试后 | 清理测试数据   |
+| TRUNCATE | 偶尔    | 批量清空测试表  |
 
 没有 DML，你的测试数据管理就是纯手工——在 Workbench 里一行行点。有了 DML，一条 SQL 批量造 1000 条数据，测试完一条 SQL 清理干净。
 
@@ -62,11 +62,11 @@ DML（Data Manipulation Language）数据操作语言，主要对数据库中的
 
 【易错点】
 
-| 常见错误 | 正确做法 |
-|----------|----------|
-| DELETE 和 DROP 混为一谈 | DELETE 删行（DML），DROP 删表（DDL） |
-| 认为 TRUNCATE 是 DML | TRUNCATE 实际是 DDL（删除后重建表，不可回滚） |
-| DML 操作后忘记 COMMIT | 非自动提交模式下必须 commit，否则数据不持久化 |
+| 常见错误               | 正确做法                          |
+| ------------------ | ----------------------------- |
+| DELETE 和 DROP 混为一谈 | DELETE 删行（DML），DROP 删表（DDL）   |
+| 认为 TRUNCATE 是 DML  | TRUNCATE 实际是 DDL（删除后重建表，不可回滚） |
+| DML 操作后忘记 COMMIT   | 非自动提交模式下必须 commit，否则数据不持久化    |
 
 【我的理解】
 > （回顾 Ch01 知识点 7 的 SQL 四大分类。现在你学的 DML 包含 INSERT/UPDATE/DELETE。TRUNCATE 虽然"效果上"是删数据，但为什么它被归类为 DDL 而不是 DML？提示：想想 TRUNCATE 能不能回滚，以及它是怎么实现的。）
