@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"验证天气系统可以根据日期返回历史天气","1","查询城市历史天气","","2026-08-06","passed","2026-08-06","TestWeather","test_weather","",""
+"验证天气系统可以根据日期返回历史天气","0","查询城市历史天气","","2026-08-06","passed","2026-08-06","TestWeather","test_weather","",""
+"验证输入非法城市时系统返回异常","0","查询不存在城市","","2026-08-06","passed","2026-08-06","TestWeather","test_weather","",""
+"验证天气系统可以正确返回城市当前天气信息","0","查询城市当前天气","","2026-08-06","passed","2026-08-06","TestWeather","test_weather","",""
+"验证天气系统可以正确返回城市当前天气信息","0","查询城市当前天气","","2026-08-06","passed","2026-08-06","TestWeather","test_weather","",""

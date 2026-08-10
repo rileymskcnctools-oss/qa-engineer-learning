@@ -43,17 +43,15 @@ class TestShoppingCart:
     def setup_method(self):
 
         print("\n创建新的购物车")
-
         self.cart = ShoppingCart()
-
 
 
     # 方法级teardown
     def teardown_method(self):
 
         print("\n清理购物车")
-
         self.cart.items.clear()
+        # 变量.属性
 
 
 
@@ -136,7 +134,6 @@ class TestShoppingCart:
             "手机",
             5999
         )
-
 
         self.cart.add_item(
             "耳机",

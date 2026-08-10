@@ -1,0 +1,1 @@
+{"uuid": "f1c23309-10d5-458c-aeaf-45197300a318", "befores": [{"name": "weather_data", "status": "passed", "start": 1786014586772, "stop": 1786014586772}], "afters": [{"name": "weather_data::<lambda>", "start": 1786014586773}], "start": 1786014586772, "stop": 1786014586773}

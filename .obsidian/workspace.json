@@ -185,20 +185,22 @@
       "bases:新建数据库": false
     }
   },
-  "active": "6f61f85a7ac458f1",
+  "active": "f9ef366be7abc016",
   "lastOpenFiles": [
-    "02-课程笔记/Pytest/作业/hw05-pytest-basic.zip",
-    "02-课程笔记/Pytest/作业/hw05-pytest-basic/__pycache__/shopping.cpython-312.pyc",
-    "02-课程笔记/Pytest/作业/hw05-pytest-basic/__pycache__/test_ShoppingCart.cpython-312-pytest-9.1.1.pyc",
-    "02-课程笔记/Pytest/作业/hw05-pytest-basic/__pycache__",
-    "02-课程笔记/Pytest/作业/hw05-pytest-basic/test_ShoppingCart.py",
-    "02-课程笔记/Pytest/作业/hw05-pytest-basic/shopping.py",
-    "02-课程笔记/Pytest/作业/hw04-pytest-basic.zip",
+    "02-课程笔记/Python/作业/pyproject.toml",
+    "02-课程笔记/Python/作业/README.md",
+    "02-课程笔记/Python/作业/homework10-python-basic",
+    "02-课程笔记/Python/作业/homework09-python-basic",
+    "02-课程笔记/Python/作业/homework08-python-basic",
+    "02-课程笔记/Python/作业/homework07-python-basic",
+    "02-课程笔记/Python/作业/homework06-python-basic",
+    "02-课程笔记/Python/作业/homework05-python-basic",
+    "02-课程笔记/Python/作业/homework04-python-basic",
+    "02-课程笔记/Python/作业/homework03-python-basic",
+    "02-课程笔记/Python/作业/homework02-python-basic",
+    "02-课程笔记/Python/作业/homework01-python-basic",
+    "02-课程笔记/Pytest/作业/homework04-pytest-basic/setup_class与对象管理总结.md",
     "02-课程笔记/Pytest/Ch03-Pytest参数化用例.md",
-    "02-课程笔记/Pytest/作业/hw04-pytest-basic/__pycache__/bank_account.cpython-312.pyc",
-    "02-课程笔记/Pytest/作业/hw04-pytest-basic/__pycache__/test_bank_account.cpython-312-pytest-9.1.1.pyc",
-    "02-课程笔记/Pytest/作业/hw04-pytest-basic/test_bank_account.py",
-    "02-课程笔记/Pytest/作业/hw04-pytest-basic/bank_account.py",
     "02-课程笔记/Pytest/作业/hw04-pytest-basic/setup_class与对象管理总结.md",
     "02-课程笔记/Pytest/Ch02-Pytest断言与框架结构.md",
     "02-课程笔记/接口测试/作业/Flask接口测试问题总结.md",
@@ -230,8 +232,6 @@
     "03-项目/plantform_backend/static/05.jpg",
     "05-Bug记录/BUG-001-Flask启动配置异常.md",
     "05-Bug记录/_模板-Bug.md",
-    "07-每日总结/2026-07/2026-07-30.md",
-    "07-每日总结/2026-07/2026-07-28.md",
-    "02-课程笔记/Pytest/Ch07-Pytest测试用例生命周期管理-fixture.md"
+    "07-每日总结/2026-07/2026-07-30.md"
   ]
 }
