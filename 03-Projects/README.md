@@ -1,0 +1,20 @@
+---
+tags: [项目, MOC]
+created: 2026-07-01
+---
+
+# 03-Projects
+
+## 项目清单
+
+| 项目 | 类型 | 状态 | 技术栈 |
+|------|------|------|--------|
+| [[功能测试/README\\|功能测试实战]] | 功能测试全流程 | ⬜ | 手工+JIRA |
+| [[测试用例/README\\|测试用例设计]] | 用例设计方法练习 | ⬜ | Excel/思维导图 |
+| [[pytest-practice/README\\|Pytest 练习项目]] | Pytest 自动化测试 | 🟢 | Python + Pytest |
+| [[PythonCode/README\\|Python 练习代码]] | Python 编程练习 | 🟢 | Python 3.x |
+| [[03_platform_backend/README\\|学生管理系统]] | Flask 全栈项目 | 🟢 | Flask + MySQL |
+
+## 模板
+
+见 [[_模板-项目]]

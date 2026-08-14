@@ -28,43 +28,46 @@ C:\Users\Administrator\Desktop\code\qa-engineer-learning\
 
 ---
 
-## 目录结构（9 个目录，不可改动）
+## 目录结构（8 个目录）
 
 ```
 qa-engineer-learning/
-├── 00-首页（Dashboard）/
+├── 00-Home/
 │   └── README.md               ← 学习总览、进度看板
-├── 01-学习路线/
+├── 01-Learning-Path/
 │   └── README.md               ← 6个月阶段规划、技能矩阵
-├── 02-课程笔记/
+├── 02-Course-Notes/
 │   ├── README.md               ← 课程清单索引
 │   ├── _模板-课程笔记.md        ← 单篇课程笔记模板
 │   ├── 软件测试基础/
-│   ├── Linux/
+│   ├── 功能测试/
+│   ├── 测试用例/
+│   ├── Bug定位/
+│   ├── 白盒测试/
 │   ├── SQL/
-│   ├── Git/
 │   ├── Python/
+│   ├── TRAE/
 │   ├── Pytest/
 │   ├── 接口测试/
+│   ├── AI大模型/
+│   ├── Linux/
+│   ├── Git/
 │   ├── Docker/
 │   └── DevOps/
-├── 03-项目/
+├── 03-Projects/
 │   ├── README.md
 │   └── _模板-项目.md
-├── 04-面试/
+├── 04-Interview/
 │   ├── README.md
 │   └── _模板-面试题.md
-├── 05-Bug记录/
+├── 05-Bug-Logs/
 │   ├── README.md
 │   └── _模板-Bug.md
-├── 06-英语/
-│   ├── README.md
-│   └── _模板-英语.md
-├── 07-每日总结/
+├── 06-Daily-Summary/
 │   ├── README.md
 │   ├── _模板-每日总结.md
 │   └── YYYY-MM/                ← 按月分目录
-├── 08-资源/
+├── 07-Resources/
 │   └── README.md
 └── AGENTS.md                   ← 本文件
 ```
@@ -75,12 +78,11 @@ qa-engineer-learning/
 
 | 目录 | 命名规则 |
 |------|---------|
-| 02-课程笔记 | `课程名/ChNN-章节名.md` |
-| 03-项目 | `项目名/README.md` + 技术文档 |
-| 04-面试 | `专题/题目关键词.md` |
-| 05-Bug记录 | `BUG-NNN-简短描述.md` |
-| 06-英语 | `分类名.md` |
-| 07-每日总结 | `YYYY-MM/YYYY-MM-DD.md` |
+| 02-Course-Notes | `课程名/ChNN-章节名.md` |
+| 03-Projects | `项目名/README.md` + 技术文档 |
+| 04-Interview | `专题/题目关键词.md` |
+| 05-Bug-Logs | `BUG-NNN-简短描述.md` |
+| 06-Daily-Summary | `YYYY-MM/YYYY-MM-DD.md` |
 | 模板文件 | `_模板-xxx.md` |
 
 ---
@@ -128,7 +130,7 @@ status: draft/in_progress/completed
    5. 生成学习任务
    6. 生成检查清单
 9. **每日总结固定板块**（不可省略任何一项）
-10. 知识库目录结构不动：00-首页 ~ 08-资源
+10. 知识库目录结构不动：00-Home ~ 07-Resources
 
 ---
 
