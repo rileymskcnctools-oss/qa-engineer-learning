@@ -9,7 +9,7 @@
 ├── pyproject.toml                  # 依赖声明（selenium + pytest），uv sync 恢复
 ├── homework01-selenium-basic/      # 第1次作业（环境验证、第一个脚本）
 ├── homework02-selenium-basic/      # 第2次作业
-└── ... homework15-selenium-basic/
+└── ... homework10-selenium-basic/  # 预建 10 个，用完再加
 ```
 
 ## 环境准备（uv，Python 3.12）
