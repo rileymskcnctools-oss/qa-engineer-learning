@@ -17,10 +17,11 @@ created: 2026-07-01
 | [[Linux/README\|Linux]] | ⬜ | | 🔴 |
 | [[SQL/README\|SQL]] | 🟢 进行中 | 5 | 🔴 |
 | [[Git/README\|Git]] | ⬜ | | 🟡 |
-| [[Python/README\|Python]] | 🟢 进行中 | 24 | 🔴 |
+| [[Python/README\|Python]] | 🟢 进行中 | 25 | 🔴 |
 | [[TRAE/README\|TRAE]] | 📝 | 1 | 🟡 |
 | [[Pytest/README\|Pytest]] | 🟢 进行中 | 13 | 🔴 |
 | [[接口测试/README\|接口测试]] | 🟢 进行中 | 2 | 🔴 |
+| [[Web自动化测试/README\|Web自动化测试（用户端）]] | 🟢 进行中 | 3 | 🔴 |
 | [[AI大模型/README\|AI大模型]] | 🟢 进行中 | 5 | 🟡 |
 | [[Docker/README\|Docker]] | ⬜ | | 🟡 |
 | [[DevOps/README\|DevOps]] | ⬜ | | 🟡 |
