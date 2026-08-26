@@ -29,3 +29,6 @@ node_modules/
 # Environment
 .env
 .env.local
+
+# 独立 Git 仓库的项目（自带 .git/，不纳入本仓库）
+03-Projects/04_ai_platform_flask/
