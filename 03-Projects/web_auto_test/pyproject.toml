@@ -1,0 +1,8 @@
+[project]
+name = "web-auto-test"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=9.1.1",
+    "selenium>=4.47.0",
+]

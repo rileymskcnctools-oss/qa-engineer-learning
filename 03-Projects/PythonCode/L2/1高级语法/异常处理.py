@@ -1,11 +1,11 @@
-# file = open("data.txt","r")
-# try:
-#     # 写入数据时可能会有问题
-#     file.write("写入的数据")
-# except IOError as err:
-#     print("文件不能写入", err)
-#
-# file.close()
+file = open("data.txt","r")
+try:
+    # 写入数据时可能会有问题
+    file.write("写入的数据")
+except IOError as err:
+    print("文件不能写入", err)
+
+file.close()
 
 
 # file = open("data.txt","r")
