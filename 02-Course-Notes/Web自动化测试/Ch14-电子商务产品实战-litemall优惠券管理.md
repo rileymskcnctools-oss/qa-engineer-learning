@@ -738,4 +738,4 @@ PO 模式：              测试用例 = 业务步骤（填名称 → 填金额 
 - [[Ch09-自动化测试定位策略]]（动态 class、索引定位的脆弱性 + 治本方案 data-test-id）
 - [[Ch13-Web自动化关键数据记录]]（日志/截图/page_source 三件套，本章是其工程化落地 + Allure 集成）
 - [[Pytest/README|Pytest]]（setup_class/teardown_class、--alluredir、后续 PO + Allure 报告）
-- PO 设计模式（下一章，本章结尾引出）
+- [[Ch15-PageObject设计模式]]（PO 六大原则 + 实战分层，本章结尾两个问题的"解药"）
