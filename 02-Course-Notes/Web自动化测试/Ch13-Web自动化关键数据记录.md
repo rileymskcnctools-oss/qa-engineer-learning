@@ -8,7 +8,7 @@ tags:
   - page_source
 course: Web自动化测试
 chapter: Ch13-Web自动化关键数据记录
-created: 2026-08-28
+created: 2026-08-29
 status: draft
 ---
 
@@ -338,3 +338,4 @@ page_source 与"元素是否可交互"的关系：元素在 page_source 里存�
 - [[Ch07-强制等待与隐式等待]]（page_source 用于区分"等待问题 vs 定位问题"）
 - [[Ch10-测试人论坛搜索功能自动化测试]]（综合实战里可加日志/截图留证）
 - [[Pytest/README|Pytest]]（fixture teardown 里做失败自动截图，后续 Allure 报告集成）
+- [[Ch14-电子商务产品实战-litemall优惠券管理]]（日志/截图/Allure 在 litemall 完整项目中的工程化落地）
