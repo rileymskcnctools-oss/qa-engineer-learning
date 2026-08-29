@@ -200,11 +200,11 @@ FileUtils.copyFile(eleScreen, new File("./image2.png"));   // 依赖 Apache Comm
 
 三种截图的用途分工：
 
-| 类型 | 方法 | 用途 |
-|------|------|------|
-| 整页/窗口截图 | `driver.get_screenshot_as_file(path)` | 看页面整体状态 |
-| 元素截图 | `element.getScreenshotAs(OutputType.FILE)` | 只截某个元素（更聚焦） |
-| 控制台日志截图 | 手动/工具截 Console 面板 | 结合 JS 报错分析 |
+| 类型      | 方法                                         | 用途          |
+| ------- | ------------------------------------------ | ----------- |
+| 整页/窗口截图 | `driver.get_screenshot_as_file(path)`      | 看页面整体状态     |
+| 元素截图    | `element.getScreenshotAs(OutputType.FILE)` | 只截某个元素（更聚焦） |
+| 控制台日志截图 | 手动/工具截 Console 面板                          | 结合 JS 报错分析  |
 
 ⚠️ 关键坑：`get_screenshot_as_file` 要求**保存目录必须已存在**，目录没建会报 `FileNotFoundError`。所以要么先 `os.makedirs("screenshot", exist_ok=True)`，要么在框架初始化时统一建好目录。
 
@@ -339,3 +339,4 @@ page_source 与"元素是否可交互"的关系：元素在 page_source 里存�
 - [[Ch10-测试人论坛搜索功能自动化测试]]（综合实战里可加日志/截图留证）
 - [[Pytest/README|Pytest]]（fixture teardown 里做失败自动截图，后续 Allure 报告集成）
 - [[Ch14-电子商务产品实战-litemall优惠券管理]]（日志/截图/Allure 在 litemall 完整项目中的工程化落地）
+- [[Ch16-异常自动截图]]（用装饰器把"失败留证"自动化，三件套的落地实现）
