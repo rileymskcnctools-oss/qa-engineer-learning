@@ -22,7 +22,7 @@ created: 2026-07-01
 | [[Pytest/README\|Pytest]] | 🟢 进行中 | 13 | 🔴 |
 | [[接口测试/README\|接口测试]] | 🟢 进行中 | 2 | 🔴 |
 | [[Web自动化测试/README\|Web自动化测试（用户端）]] | 🟢 进行中 | 19 | 🔴 |
-| [[APP自动化测试/README\|APP自动化测试]] | 🟢 进行中 | 6 | 🔴 |
+| [[APP自动化测试/README\|APP自动化测试]] | 🟢 进行中 | 10 | 🔴 |
 | [[AI大模型/README\|AI大模型]] | 🟢 进行中 | 5 | 🟡 |
 | [[Docker/README\|Docker]] | ⬜ | | 🟡 |
 | [[DevOps/README\|DevOps]] | ⬜ | | 🟡 |
