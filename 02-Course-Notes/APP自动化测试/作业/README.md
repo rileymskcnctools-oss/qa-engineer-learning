@@ -45,6 +45,8 @@ python pack_homework.py homework01-appium-basic
 
 接收方解压后 `uv sync` 即可复现环境。
 
+**一键打包全部作业**：双击本目录的 `pack_all.bat`，会自动打包所有 `homeworkNN-appium-basic` 文件夹（自动跳过 `.venv`），每个产物约 9KB。
+
 ## 注意
 
 - 跑 Appium 用例前先启动 Appium Server（命令行 `appium`）和模拟器/真机（`adb devices` 能看到设备）
