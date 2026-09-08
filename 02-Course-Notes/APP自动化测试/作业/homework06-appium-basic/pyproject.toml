@@ -1,0 +1,9 @@
+[project]
+name = "homework06-appium-basic"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8.0",
+    "Appium-Python-Client>=4.0",
+    "selenium>=4.20",
+]
