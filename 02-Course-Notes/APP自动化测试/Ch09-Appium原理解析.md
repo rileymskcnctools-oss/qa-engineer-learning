@@ -6,7 +6,7 @@ tags:
   - 原理
 course: APP自动化测试
 chapter: Ch09-Appium原理解析
-created: 2026-09-03
+created: 2026-09-07
 status: draft
 ---
 
@@ -70,6 +70,24 @@ Appium 设计分三大模块，各司其职，符合设计模式的单一职责�
 - Server 端：信息中转。启动 HTTP 服务接收 Client 请求，并把所有控制命令（adb 命令、自动化控制命令等）转发到被测 App 的移动端。
 - 移动端：真正执行自动化测试的地方。
 
+> **Appium 三大模块架构图**（重新绘制）：
+
+```mermaid
+flowchart LR
+    subgraph Client["Client 端（发起）"]
+        A["测试脚本 / Inspector<br/>(Python / Java / JS 客户端库)"]
+    end
+    subgraph Server["Server 端（中转）"]
+        B["Appium Server<br/>HTTP 服务（:4723）"]
+    end
+    subgraph Mobile["移动端（执行）"]
+        C["UiAutomator2 / XCUITest<br/>在设备上真正执行"]
+    end
+
+    A -->|"① HTTP 请求<br/>(WebDriver 协议 / JSON)"| B
+    B -->|"② 设备命令<br/>(adb / 自动化控制指令)"| C
+```
+
 【为什么？】
 
 1. 单一职责：三模块各管一段（发起 / 中转 / 执行），职责清晰，任何一层可替换、可扩展。
@@ -123,6 +141,26 @@ Appium 设计分三大模块，各司其职，符合设计模式的单一职责�
 9. 检查/安装 server apk（appium-uiautomator2-server）与 test apk。
 10. 启动 UIAutomator2 server。
 11. 用 adb 启动被测 App（adb shell am start ...）。
+
+> **一次 session 的完整流转时序图**（重新绘制，Android + UiAutomator2）：
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant C as Client（测试脚本）
+    participant S as Appium Server（:4723）
+    participant D as adb / 设备
+
+    S->>S: 加载 UiAutomator2 Driver，启动 :4723 服务
+    C->>S: POST /session（携带 capabilities）
+    S->>S: 匹配 driver（automationName=uiautomator2）
+    S->>D: adb -P 5037 start-server（检查并启动 adb）
+    S->>D: 推送 io.appium.settings apk
+    S->>D: 端口映射 本地 8200 → 设备 6790
+    S->>D: 安装 appium-uiautomator2-server + test apk
+    S->>D: 启动 UiAutomator2 server
+    S->>D: adb shell am start 启动被测 App
+```
 
 【为什么？】
 
