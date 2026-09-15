@@ -19,9 +19,17 @@
 | Ch13 | ⭐⭐⭐ | [[Ch13-App抓包实战练习]]  | draft |            |
 | Ch14 | ⭐⭐⭐ | [[Ch14-接口测试实战练习]]  | draft |            |
 | Ch15 | ⭐⭐  | [[Ch15-抓包工具Fiddler]]  | draft |            |
+| Ch16 | ⭐⭐  | [[Ch16-常用代理工具与代理模式]] | draft |            |
+| Ch17 | ⭐⭐⭐ | [[Ch17-弱网测试]]        | draft |            |
+| Ch18 | ⭐⭐⭐ | [[Ch18-mock的价值与意义]]  | draft |            |
+| Ch19 | ⭐⭐⭐ | [[Ch19-mock技术体系与分类]] | draft |            |
+| Ch20 | ⭐⭐⭐ | [[Ch20-Charles mock实战]] | draft |            |
+| Ch21 | ⭐⭐  | [[Ch21-使用curl发送请求]]   | draft |            |
+| Ch22 | ⭐⭐⭐ | [[Ch22-抓包分析TCP协议]]   | draft |            |
+| Ch23 | ⭐⭐  | [[Ch23-RPC与Socket接口测试]] | draft |            |
 
 ## 学习进度
 
-- 总章节：15
+- 总章节：23
 - 已完成：0
 - 进行中：0
