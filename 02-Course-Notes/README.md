@@ -20,7 +20,8 @@ created: 2026-07-01
 | [[Python/README\|Python]] | 🟢 进行中 | 25 | 🔴 |
 | [[TRAE/README\|TRAE]] | 📝 | 1 | 🟡 |
 | [[Pytest/README\|Pytest]] | 🟢 进行中 | 13 | 🔴 |
-| [[接口测试/README\|接口测试]] | 🟢 进行中 | 25 | 🔴 |
+| [[Flask/README\|Flask]] | 🟢 进行中 | 5 | 🔴 |
+| [[接口测试/README\|接口测试]] | 🟢 进行中 | 20 | 🔴 |
 | [[接口自动化/README\|接口自动化]] | 🟢 进行中 | 24 | 🔴 |
 | [[Web自动化测试/README\|Web自动化测试（用户端）]] | 🟢 进行中 | 19 | 🔴 |
 | [[APP自动化测试/README\|APP自动化测试]] | 🟢 进行中 | 27 | 🔴 |
