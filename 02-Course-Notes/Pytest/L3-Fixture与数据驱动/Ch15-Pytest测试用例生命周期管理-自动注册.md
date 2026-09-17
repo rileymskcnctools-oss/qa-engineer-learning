@@ -117,6 +117,6 @@ tests/
 
 ## 关联笔记
 
-- [[Ch07-Pytest测试用例生命周期管理-fixture]]
-- [[Ch08-Pytest测试用例生命周期管理-yield]]
-- [[Ch10-Pytest测试用例生命周期管理-自动生效]]
+- [[Ch13-Pytest测试用例生命周期管理-fixture]]
+- [[Ch14-Pytest测试用例生命周期管理-yield]]
+- [[Ch16-Pytest测试用例生命周期管理-自动生效]]

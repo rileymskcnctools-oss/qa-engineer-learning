@@ -122,5 +122,5 @@ def order():
 
 ## 关联笔记
 
-- [[Ch07-Pytest测试用例生命周期管理-fixture]]
-- [[Ch09-Pytest测试用例生命周期管理-自动注册]]
+- [[Ch13-Pytest测试用例生命周期管理-fixture]]
+- [[Ch15-Pytest测试用例生命周期管理-自动注册]]

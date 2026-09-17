@@ -147,5 +147,5 @@ order 的值设计成"越小越先"而不是"越大越先"，是为了直觉：`
 
 ## 关联笔记
 
-- [[Ch11-Pytest插件]]
-- [[Ch04-Pytest标记测试用例]]（@pytest.mark 体系）
+- [[Ch25-Pytest插件]]
+- [[Ch07-Pytest标记测试用例]]（@pytest.mark 体系）

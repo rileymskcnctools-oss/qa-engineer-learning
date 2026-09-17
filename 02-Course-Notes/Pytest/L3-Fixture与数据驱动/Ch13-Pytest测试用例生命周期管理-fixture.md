@@ -172,4 +172,4 @@ scope 的包含关系：function ⊂ class ⊂ module ⊂ package ⊂ session。
 ## 关联笔记
 
 - [[Ch02-Pytest断言与框架结构]]（setup/teardown 部分）
-- [[Ch08-Pytest测试用例生命周期管理-yield]]
+- [[Ch14-Pytest测试用例生命周期管理-yield]]

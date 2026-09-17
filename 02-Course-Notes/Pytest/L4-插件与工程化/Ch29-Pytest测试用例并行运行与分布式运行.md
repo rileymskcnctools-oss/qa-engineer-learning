@@ -122,5 +122,5 @@ status: draft
 
 ## 关联笔记
 
-- [[Ch11-Pytest插件]]
-- [[Ch12-Pytest测试用例执行顺序自定义]]
+- [[Ch25-Pytest插件]]
+- [[Ch28-Pytest测试用例执行顺序自定义]]

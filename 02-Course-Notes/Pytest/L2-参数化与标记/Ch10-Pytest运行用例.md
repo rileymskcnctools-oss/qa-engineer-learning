@@ -148,5 +148,5 @@ PyCharm 的界面化运行本质上是 IDE 帮你拼装 pytest 命令行参数�
 
 ## 关联笔记
 
-- [[Ch03-Pytest参数化用例]]
-- [[Ch04-Pytest标记测试用例]]
+- [[Ch04-Pytest参数化用例]]
+- [[Ch07-Pytest标记测试用例]]

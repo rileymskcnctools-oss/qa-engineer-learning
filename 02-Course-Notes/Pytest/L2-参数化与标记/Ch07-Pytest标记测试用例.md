@@ -8,7 +8,7 @@ status: draft
 
 # Ch04 - Pytest 标记测试用例
 
-> 前置：[[Ch01-Pytest入门]] / [[Ch02-Pytest断言与框架结构]] / [[Ch03-Pytest参数化用例]]
+> 前置：[[Ch01-Pytest入门]] / [[Ch02-Pytest断言与框架结构]] / [[Ch04-Pytest参数化用例]]
 
 ## 课程来源
 - 学习日期：
@@ -209,4 +209,4 @@ Pytest 内置标记（无需注册）：
 ## 关联笔记
 - [[Ch01-Pytest入门]]
 - [[Ch02-Pytest断言与框架结构]]
-- [[Ch03-Pytest参数化用例]]
+- [[Ch04-Pytest参数化用例]]

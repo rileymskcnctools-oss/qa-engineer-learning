@@ -211,6 +211,6 @@ Allure 报告中的展示：
 -
 
 ## 关联笔记
-- [[Ch14-Allure2安装与报告生成]]
-- [[Ch15-Allure2用例装饰器]]
-- [[Ch07-Pytest测试用例生命周期管理-fixture]]
+- [[Ch31-Allure2安装与报告生成]]
+- [[Ch32-Allure2用例装饰器]]
+- [[Ch13-Pytest测试用例生命周期管理-fixture]]

@@ -372,5 +372,5 @@ pytest --allure-severities blocker,critical    # 只跑高优先级
 -
 
 ## 关联笔记
-- [[Ch14-Allure2安装与报告生成]]
-- [[Ch16-Allure2标签与失败重试]]
+- [[Ch31-Allure2安装与报告生成]]
+- [[Ch33-Allure2标签与失败重试]]

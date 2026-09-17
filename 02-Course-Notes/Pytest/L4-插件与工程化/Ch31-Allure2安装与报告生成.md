@@ -158,5 +158,5 @@ allure generate ./result -o ./report --clean   # 第二步：生成静态报告
 -
 
 ## 关联笔记
-- [[Ch13-Pytest测试用例并行运行与分布式运行]]
-- [[Ch15-Allure2用例装饰器]]
+- [[Ch29-Pytest测试用例并行运行与分布式运行]]
+- [[Ch32-Allure2用例装饰器]]
