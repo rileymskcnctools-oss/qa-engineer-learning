@@ -57,10 +57,17 @@ created: 2026-09-17
 
 | 章节 | 重要性 | 标题 | 状态 | 学习日期 |
 |------|--------|------|------|----------|
-| — | — | 待整理（socket/websocket/异步接口/Swagger/接口管理体系等） | — | |
+| Ch27 | ⭐⭐ | [[Ch27-socket协议的接口测试]] | in_progress | 2026-09-17 |
+| Ch28 | ⭐⭐ | [[Ch28-websocket协议的接口测试]] | in_progress | 2026-09-17 |
+| Ch29 | ⭐⭐ | [[Ch29-代码生成框架SwaggerCodeGen]] | in_progress | 2026-09-17 |
+| Ch30 | ⭐⭐⭐ | [[Ch30-异步接口]] | in_progress | 2026-09-17 |
+| Ch31 | ⭐⭐⭐ | [[Ch31-接口管理体系]] | in_progress | 2026-09-17 |
+| Ch32 | ⭐⭐⭐ | [[Ch32-接口管理框架Swagger]] | in_progress | 2026-09-17 |
+
+> L5 待整理：diffy 接口 diff、gor 流量回放、har 生成用例、dubbo/thrift/pb 协议、httprunner 框架。
 
 ## 学习进度
 
 - 总章节：待定
-- 已完成：24
-- 进行中：24
+- 已完成：30
+- 进行中：30
