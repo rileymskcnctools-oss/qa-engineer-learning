@@ -1,7 +1,7 @@
 ---
-tags: [课程笔记, 接口测试, Flask]
-course: "接口测试"
-chapter: "Ch02-Flask入门"
+tags: [课程笔记, Flask]
+course: "Flask"
+chapter: "Ch01-Flask环境安装与配置"
 created: 2026-07-28
 status: draft
 ---
