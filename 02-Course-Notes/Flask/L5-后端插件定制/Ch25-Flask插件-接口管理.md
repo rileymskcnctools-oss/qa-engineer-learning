@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Flask, 插件]
 course: "Flask"
-chapter: "Ch24-Flask插件-接口管理"
+chapter: "Ch25-Flask插件-接口管理"
 created: 2026-09-17
 status: in_progress
 ---

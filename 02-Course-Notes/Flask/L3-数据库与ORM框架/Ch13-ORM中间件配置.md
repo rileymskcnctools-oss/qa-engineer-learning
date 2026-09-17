@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Flask, ORM]
 course: "Flask"
-chapter: "Ch12-ORM中间件配置"
+chapter: "Ch13-ORM中间件配置"
 created: 2026-09-17
 status: in_progress
 ---

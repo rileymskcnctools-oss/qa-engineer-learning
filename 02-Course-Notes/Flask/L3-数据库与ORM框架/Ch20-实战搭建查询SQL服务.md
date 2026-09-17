@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Flask, ORM, 实战]
 course: "Flask"
-chapter: "Ch19-实战搭建查询SQL服务"
+chapter: "Ch20-实战搭建查询SQL服务"
 created: 2026-09-17
 status: in_progress
 ---

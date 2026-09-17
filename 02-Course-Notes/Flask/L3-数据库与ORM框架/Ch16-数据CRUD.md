@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Flask, ORM]
 course: "Flask"
-chapter: "Ch15-数据CRUD"
+chapter: "Ch16-数据CRUD"
 created: 2026-09-17
 status: in_progress
 ---

@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Flask, 插件]
 course: "Flask"
-chapter: "Ch23-Flask插件-鉴权"
+chapter: "Ch24-Flask插件-鉴权"
 created: 2026-09-17
 status: in_progress
 ---

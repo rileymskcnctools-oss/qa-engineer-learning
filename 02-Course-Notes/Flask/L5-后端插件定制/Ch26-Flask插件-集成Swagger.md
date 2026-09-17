@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Flask, 插件]
 course: "Flask"
-chapter: "Ch25-Flask插件-集成Swagger"
+chapter: "Ch26-Flask插件-集成Swagger"
 created: 2026-09-17
 status: in_progress
 ---
