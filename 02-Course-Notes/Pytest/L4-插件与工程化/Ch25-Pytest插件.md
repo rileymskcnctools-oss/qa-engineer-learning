@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch11-Pytest插件"
+chapter: "Ch25-Pytest插件"
 date: 2026-07-23
 status: draft
 ---

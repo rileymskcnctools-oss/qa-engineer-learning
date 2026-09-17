@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch12-Pytest测试用例执行顺序自定义"
+chapter: "Ch28-Pytest测试用例执行顺序自定义"
 date: 2026-07-23
 status: draft
 ---

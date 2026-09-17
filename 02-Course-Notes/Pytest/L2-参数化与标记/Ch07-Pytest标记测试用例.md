@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch04-Pytest标记测试用例"
+chapter: "Ch07-Pytest标记测试用例"
 date: 2026-07-21
 status: draft
 ---

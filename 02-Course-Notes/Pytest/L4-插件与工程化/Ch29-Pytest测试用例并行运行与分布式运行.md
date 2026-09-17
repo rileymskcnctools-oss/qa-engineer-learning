@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch13-Pytest测试用例并行运行与分布式运行"
+chapter: "Ch29-Pytest测试用例并行运行与分布式运行"
 date: 2026-07-23
 status: draft
 ---

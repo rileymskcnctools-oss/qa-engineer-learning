@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest, Allure]
 course: "Pytest"
-chapter: "Ch14-Allure2安装与报告生成"
+chapter: "Ch31-Allure2安装与报告生成"
 created: 2026-07-28
 status: draft
 ---

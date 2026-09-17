@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch05-Pytest运行用例"
+chapter: "Ch10-Pytest运行用例"
 date: 2026-07-23
 status: draft
 ---

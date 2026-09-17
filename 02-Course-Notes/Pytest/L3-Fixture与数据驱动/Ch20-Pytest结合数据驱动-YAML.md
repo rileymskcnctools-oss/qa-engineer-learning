@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch06-Pytest结合数据驱动-YAML"
+chapter: "Ch20-Pytest结合数据驱动-YAML"
 date: 2026-07-23
 status: draft
 ---

@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest, Allure]
 course: "Pytest"
-chapter: "Ch16-Allure2标签与失败重试"
+chapter: "Ch33-Allure2标签与失败重试"
 created: 2026-07-28
 status: draft
 ---

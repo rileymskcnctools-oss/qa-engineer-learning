@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch09-Pytest测试用例生命周期管理-自动注册"
+chapter: "Ch15-Pytest测试用例生命周期管理-自动注册"
 date: 2026-07-23
 status: draft
 ---

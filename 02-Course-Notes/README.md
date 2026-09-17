@@ -19,7 +19,7 @@ created: 2026-07-01
 | [[Git/README\|Git]] | ⬜ | | 🟡 |
 | [[Python/README\|Python]] | 🟢 进行中 | 25 | 🔴 |
 | [[TRAE/README\|TRAE]] | 📝 | 1 | 🟡 |
-| [[Pytest/README\|Pytest]] | 🟢 进行中 | 13 | 🔴 |
+| [[Pytest/README\|Pytest]] | 🟢 进行中 | 33 | 🔴 |
 | [[Flask/README\|Flask]] | 🟢 进行中 | 26 | 🔴 |
 | [[接口测试/README\|接口测试]] | 🟢 进行中 | 20 | 🔴 |
 | [[接口自动化测试/README\|接口自动化测试]] | 🟢 进行中 | 40 | 🔴 |

@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch07-Pytest测试用例生命周期管理-fixture"
+chapter: "Ch13-Pytest测试用例生命周期管理-fixture"
 date: 2026-07-23
 status: draft
 ---

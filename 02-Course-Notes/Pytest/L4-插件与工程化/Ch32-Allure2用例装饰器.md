@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest, Allure]
 course: "Pytest"
-chapter: "Ch15-Allure2用例装饰器"
+chapter: "Ch32-Allure2用例装饰器"
 created: 2026-07-28
 status: draft
 ---

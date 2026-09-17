@@ -1,7 +1,7 @@
 ---
 tags: [课程笔记, Pytest]
 course: "Pytest"
-chapter: "Ch03-Pytest参数化用例"
+chapter: "Ch04-Pytest参数化用例"
 date: 2026-07-21
 status: draft
 ---
