@@ -1397,3 +1397,5 @@ npm install
 - [[Ch08-Appium环境安装与使用]]（JDK / Android / Appium Server / Inspector 环境前提）
 - [[Pytest/README|Pytest]]（parametrize、conftest、钩子）
 - [[../../03-Projects/06_app_auto_test-main/项目总结|企业微信 App 自动化框架 项目总结]]（配套项目代码索引）
+- [[../../03-Projects/06_app_auto_test-main/App自动化实战-完整技术文档|App自动化实战-完整技术文档]]（源码级详解：真实项目用 loguru/pathlib、与 PPT 示例的差异对照、源码三处待改进）
+- [[实战项目-企业微信App自动化测试实战-直播观看思路]]（L5 实战观看地图：分阶段「带着这些问题看」+ 易踩的坑）
