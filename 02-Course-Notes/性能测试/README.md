@@ -31,7 +31,8 @@ status: in_progress
 
 ## 学习进度
 
-- L1 性能测试体系：10 / 10 章已建笔记（站点 L1 tutorial 页全部覆盖 + 概念/架构补全）
+- L1 性能测试体系：10 / 10 章（Ch01~Ch10）— 见 [[L1-性能测试体系-重点梳理|重点梳理（跟着学版）]]
+- L1 JMeter 常用组件：21 / 21 章（Ch11~Ch31，章节编号按站点一页一章）→ [[L1-JMeter常用组件/README|L1-JMeter常用组件]]
 
 ## 参考文档
 
@@ -49,14 +50,17 @@ status: in_progress
 
 > 课程原话：能做调优的测试，基本都是资深专家以上的级别——所以调优不必急于吹会，先把 L1（场景设计）和 L2（瓶颈定位）打通。
 
-## 后续模块（站点 L2~L5，待学）
+## 后续模块（站点其余模块，待学）
 
-| 层级 | 站点模块 | 主要内容 |
-|------|----------|----------|
-| L2 | 性能测试工具·JMeter 参数化与并发 / 性能监控·Prometheus 监控系统 | 参数化（csv/json/mysql/redis/xml/yaml）、并发策略、webservice 加压、Prometheus 部署、Grafana 数据分析系统 |
-| L3 | JMeter 分布式与 Beanshell / 性能监控·NGinx 与数据库 | 分布式加压机制、调试方法、Beanshell 开发、自定义 jar、Nginx 性能数据监控 |
-| L4 | JMeter 微服务压测 / 性能瓶颈分析 | Dubbo / Kafka / PB / TCP / 微服务压测；Nginx·MySQL·Redis·Kafka 瓶颈分析；JVM 数据采集 |
-| L5 | JMeter 二次开发 / 性能剖析与火焰图 | JMeter 插件机制与源码分析、全链路压测体系、性能测试平台设计、JVM 分析工具、CPU/内存火焰图、eBPF/perf、SkyWalking、App 原生性能分析 |
+| 层级 | 站点模块 | 主要内容 | 本仓库状态 |
+|------|----------|----------|-----------|
+| L1 | **JMeter 常用组件** → [[L1-JMeter常用组件/README\|L1-JMeter常用组件]] | 介绍安装与运行、代理录制、测试计划、线程组、控制器、场景逻辑控制、采样器、监听器、定时器、断言、配置元件、前置/后置处理器、执行顺序、HTTP 请求设置/属性/信息头/cookie、虚拟用户管理、监听器与测试结果 | ✅ 已建 21 章（Ch11~Ch31，一页一章） |
+| L2 | 性能测试工具·JMeter 参数化与并发 / 性能监控·Prometheus 监控系统 | 参数化（csv/json/mysql/redis/xml/yaml）、并发策略、webservice 加压、Prometheus 部署、Grafana 数据分析系统 | ⬜ 待学 |
+| L3 | JMeter 分布式与 Beanshell / 性能监控·NGinx 与数据库 | 分布式加压机制、调试方法、Beanshell 开发、自定义 jar、Nginx 性能数据监控 | ⬜ 待学 |
+| L4 | JMeter 微服务压测 / 性能瓶颈分析 | Dubbo / Kafka / PB / TCP / 微服务压测；Nginx·MySQL·Redis·Kafka 瓶颈分析；JVM 数据采集 | ⬜ 待学 |
+| L5 | 性能瓶颈分析·性能剖析与火焰图 | 插件机制与源码分析、全链路压测体系、性能测试平台设计、JVM 分析工具、CPU/内存火焰图、eBPF/perf、SkyWalking、App 原生性能分析 | ⬜ 待学 |
+
+
 
 ## 关联
 
