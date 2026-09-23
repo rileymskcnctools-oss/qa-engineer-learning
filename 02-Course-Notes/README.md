@@ -25,6 +25,7 @@ created: 2026-07-01
 | [[接口自动化测试/README\|接口自动化测试]] | 🟢 进行中 | 40 | 🔴 |
 | [[Web自动化测试/README\|Web自动化测试（用户端）]] | 🟢 进行中 | 19 | 🔴 |
 | [[APP自动化测试/README\|APP自动化测试]] | 🟢 进行中 | 28 | 🔴 |
+| [[性能测试/README\|性能测试]] | 🟢 进行中 | 1 | 🟡 |
 | [[AI大模型/README\|AI大模型]] | 🟢 进行中 | 5 | 🟡 |
 | [[Docker/README\|Docker]] | ⬜ | | 🟡 |
 | [[DevOps/README\|DevOps]] | ⬜ | | 🟡 |
