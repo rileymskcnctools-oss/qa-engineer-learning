@@ -19,13 +19,15 @@ L1 讲"脚本**怎么搭起来**"（组件 + 作用域 + 执行顺序），本�
 | 章节 | 站点页 | 重要性 | 状态 | 学习日期 | 内容概要 |
 |------|--------|--------|------|---------|----------|
 | [[Ch32-JMeter变量与引用]] | JMeter变量与引用 | ⭐⭐⭐ | 📝 | 2026-10-11 | 变量是什么、三类来源、原文 9 条优点合并为 4 类；User Defined Variables 与"测试开始时一次性求值"；`${变量}` 引用语法与常用函数（`__V` / `__P` / `__threadNum` / `__counter`）；**变量（线程私有）vs 属性（全 JVM 共享）——原文"跨线程传参"勘误**；四种赋值方式对比与验证（Debug Sampler / View Results Tree） |
+| [[Ch33-使用变量进行参数化测试]] | 使用变量进行参数化测试 | ⭐⭐⭐ | 📝 | 2026-10-11 | 参数化的价值（4 条收益 + "假并发"问题）与 4 种类型（UDV / 用户参数 / 函数助手 / CSV）；两种做法各走一遍（UDV 的定位、CSV 读取 8 步）；工程纪律（正常/边界/异常三类数据、失败可定位、参数化与关联分工） |
+| [[Ch34-JMeter参数化csv]] | JMeter参数化csv | ⭐⭐⭐ | 📝 | 2026-10-11 | CSV 专页：5 条优点 + 与 UDV/用户参数的分工；**CSV Data Set Config 9 个参数全解**（Variable Names 留空＝首行表头、Delimiter `\t`、Allow quoted data、Recycle、Stop thread on EOF、Sharing mode）；**行与线程的分配关系**（默认 All threads、分配顺序不保证、`test${__threadNum}.csv` + Current thread）；EOF 行为（`<EOF>`、`csvdataset.eofstring`、Bug 40394）；实操与排查五问 |
 
-> 该层站点页共 **10 页**，「JMeter变量与引用」已建（Ch32）。其余 9 页待补建，编号从 **Ch33** 起，**按站点 sidebar 顺序**（sitemap 是字母序，不作编号依据）：
-> `JMeter参数化csv` · `JMeter参数化json` · `JMeter参数化mysql` · `JMeter参数化redis` · `JMeter参数化xml` · `JMeter参数化yaml` · `使用变量进行参数化测试` · `JMeter并发策略` · `webservice加压实战`
+> 该层站点页共 **10 页**，已建 3 章（Ch32~Ch34）。其余 7 页待补建，编号从 **Ch35 起**（⚠️ 注意：全仓库 Ch35~Ch43 已被 [[../L1-服务端统计工具/README|L1 服务端统计工具]] 与 [[../L2-性能监控体系/README|L2 性能监控体系]] 占用，补建本模块章节时应续编 **Ch44+**，并按站点 sidebar 顺序整理）：
+> `JMeter参数化json` · `JMeter参数化mysql` · `JMeter参数化redis` · `JMeter参数化xml` · `JMeter参数化yaml` · `JMeter并发策略` · `webservice加压实战`
 
 ## 学习进度
 
-- 1 / 10 章已建笔记（站点「性能测试工具 / L2.JMeter 参数化与并发」10 个 tutorial 页中的 1 页）
+- 3 / 10 章已建笔记（站点「性能测试工具 / L2.JMeter 参数化与并发」10 个 tutorial 页中的 3 页：变量与引用 / 使用变量进行参数化测试 / 参数化csv）
 - 建章纪律：每章七个内容标记齐全（按知识点逐项校验）、无空表格、无悬空链接；原文勘误必须**先核对 JMeter 官方文档再写**
 
 ## 建议学习顺序（本模块）

@@ -36,12 +36,39 @@ status: in_progress
 | 章节 | 重要性 | 状态 | 学习日期 | 内容概要 |
 |------|--------|------|---------|----------|
 | [[Ch32-JMeter变量与引用]] | ⭐⭐⭐ | 📝 | 2026-10-11 | 变量的三类来源与"结构 / 数据分离"；User Defined Variables 的求值时机（测试开始**一次性**）；`${}` 引用语法与 `__V` / `__P` / `__threadNum` / `__counter`；**变量（线程私有）vs 属性（全 JVM 共享）——课程原文"跨线程传参"勘误**；四种赋值方式对比与验证 |
+| [[Ch33-使用变量进行参数化测试]] | ⭐⭐⭐ | 📝 | 2026-10-11 | 参数化的价值（4 条收益、"假并发"与缓存命中问题）；4 种类型（UDV / 用户参数 / 函数助手 / CSV）与选型；两种做法（UDV 定位、CSV 读取 8 步）；工程纪律（正常/边界/异常三类数据、失败可定位、参数化与关联分工） |
+| [[Ch34-JMeter参数化csv]] | ⭐⭐⭐ | 📝 | 2026-10-11 | CSV Data Set Config 9 个参数全解（Variable Names 留空＝首行表头、Delimiter `\t`、Allow quoted data、Recycle、Stop thread on EOF、Sharing mode）；行与线程的分配关系（默认 All threads、`test${__threadNum}.csv` + Current thread）；EOF 行为 `<EOF>` 与 `csvdataset.eofstring`；CSV 变量配置时刻不可用（Bug 40394） |
+
+## L1 · 服务端统计工具（站点分支：性能监控）
+
+> 站点模块：性能监控 / `L1/tutorial/服务端统计工具`（该层共 5 个 tutorial 页，本层已建 3 章）→ [[L1-服务端统计工具/README|L1-服务端统计工具（模块 MOC）]]
+
+| 章节 | 重要性 | 状态 | 学习日期 | 内容概要 |
+|------|--------|------|---------|----------|
+| [[Ch35-性能分析系统级别指标io cpu mem net]] | ⭐⭐⭐ | 📝 | 2026-10-11 | 四类指标 io/cpu/mem/net 与判读：`uptime` load、`vmstat`（r/cs/si·so/wa）、`mpstat -P ALL`、`sar -u`、`free -g` 看 available、`iostat -x`（%util/await）、`df -h` vs `df -i`、`netstat`/`ss`（TIME_WAIT）；含原文 2 处勘误 |
+| [[Ch36-top命令使用]] | ⭐⭐⭐ | 📝 | 2026-10-11 | top 的 6 条作用；三段输出解读（load average、`%Cpu(s)` us/sy/wa/st、Mem/Swap、进程表 RES/STAT）；交互键（`P`/`M`/`T`、`1`、`c`、`H`、`k`）与 `top -b -n 1` 采集留痕；压测排错四步套路 |
+| [[Ch37-ps命令]] | ⭐⭐⭐ | 📝 | 2026-10-11 | ps 快照 vs top 录像；7 条应用场景；`ps aux`（BSD）vs `ps -ef`（UNIX）两种风格；输出列（RSS vs VSZ、%CPU 是自启动均值、STAT 的 D/Z）；grep/awk/`--sort` 组合与压测前后取证 |
+
+## L2 · 性能监控体系（站点分支：性能监控）
+
+> 站点模块：性能监控 / `L2/tutorial`（该层 6 个 tutorial 页，**已全部建章**）→ [[L2-性能监控体系/README|L2-性能监控体系（模块 MOC）]]
+
+| 章节 | 重要性 | 状态 | 学习日期 | 内容概要 |
+|------|--------|------|---------|----------|
+| [[Ch38-系统性能数据收集（cpu、mem、net、io）]] | ⭐⭐⭐ | 📝 | 2026-10-11 | 四链命令清单（原文完整保留）+ **采集三形态**（脚本 → 定时落库 → 监控系统）；采集纪律（时间对齐/基线/开销/容器视角）；可直接用的采集脚本骨架 |
+| [[Ch39-性能监控系统价值]] | ⭐⭐⭐ | 📝 | 2026-10-11 | 监控系统 4 条价值与 4 个场景；**体系选择**：Grafana（看图）/ Prometheus（记数）/ Zipkin（链路）/ SkyWalking（APM）；可观测性三支柱；本模块路线图 |
+| [[Ch40-搭建服务端性能监控系统Prometheus]] | ⭐⭐⭐ | 📝 | 2026-10-11 | Prometheus 定位与 7 条场景；核心概念（target/job/instance/labels、pull、两个 interval、PromQL）；搭建四步 + YAML 逐行解读；**原文 3 处勘误**（镜像名大小写、冒号缺空格、`/etc/Prometheus`）；三层验证 |
+| [[Ch41-搭建数据分析系统Grafana]] | ⭐⭐⭐ | 📝 | 2026-10-11 | Grafana 定位（不采集不存储）与 7 条场景；核心概念（Data Source/Dashboard/Panel/Query/Variables/Alerting）；docker 两条命令 + 挂载 `/var/lib/grafana`；容器内 localhost 陷阱；压测看板面板清单 |
+| [[Ch42-Prometheus监控系统部署应用实战]] | ⭐⭐⭐ | 📝 | 2026-10-11 | 三件套数据流（9100 → 9090 → 3000）；搭建四步与验收点；常见指标 9 类 + Node Exporter 指标名（`rate()`、`MemAvailable`、`node_load1`、`up`）；压测前中后检查清单 |
+| [[Ch43-jmeter实时压测结果收集]] | ⭐⭐⭐ | 📝 | 2026-10-11 | JMeter + InfluxDB + Grafana 实时体系；推 vs 拉；InfluxDB 1.8 建库；Backend Listener 参数（`influxdbUrl`、`application`、`testTitle`、`percentiles`、`summaryOnly`）；TPS/QPS/并发数/吞吐量/RT 口径（含原文 3 处勘误） |
 
 ## 学习进度
 
 - L1 性能测试体系：10 / 10 章（Ch01~Ch10）— 见 [[L1-性能测试体系-重点梳理|重点梳理（跟着学版）]]
 - L1 JMeter 常用组件：21 / 21 章（Ch11~Ch31，章节编号按站点一页一章）→ [[L1-JMeter常用组件/README|L1-JMeter常用组件]]
-- L2 JMeter 参数化与并发：1 / 10 章（Ch32 起，章节编号按站点一页一章）→ [[L2-JMeter参数化与并发/README|L2-JMeter参数化与并发]]
+- L2 JMeter 参数化与并发：3 / 10 章（Ch32~Ch34）→ [[L2-JMeter参数化与并发/README|L2-JMeter参数化与并发]]
+- L1 服务端统计工具：3 / 5 章（Ch35~Ch37）→ [[L1-服务端统计工具/README|L1-服务端统计工具]]
+- L2 性能监控体系：6 / 6 章（Ch38~Ch43，本层已全覆盖）→ [[L2-性能监控体系/README|L2-性能监控体系]]
 
 ## 参考文档
 
@@ -64,7 +91,7 @@ status: in_progress
 | 层级 | 站点模块 | 主要内容 | 本仓库状态 |
 |------|----------|----------|-----------|
 | L1 | **JMeter 常用组件** → [[L1-JMeter常用组件/README\|L1-JMeter常用组件]] | 介绍安装与运行、代理录制、测试计划、线程组、控制器、场景逻辑控制、采样器、监听器、定时器、断言、配置元件、前置/后置处理器、执行顺序、HTTP 请求设置/属性/信息头/cookie、虚拟用户管理、监听器与测试结果 | ✅ 已建 21 章（Ch11~Ch31，一页一章） |
-| L2 | **JMeter 参数化与并发** → [[L2-JMeter参数化与并发/README\|L2-JMeter参数化与并发]] / 性能监控·Prometheus 监控系统 | 参数化（csv/json/mysql/redis/xml/yaml）、并发策略、webservice 加压、Prometheus 部署、Grafana 数据分析系统 | 🟢 进行中（1 / 10 章） |
+| L2 | **JMeter 参数化与并发** → [[L2-JMeter参数化与并发/README\|L2-JMeter参数化与并发]] / **性能监控体系** → [[L2-性能监控体系/README\|L2-性能监控体系]] | 参数化（csv/json/mysql/redis/xml/yaml）、并发策略、webservice 加压；Prometheus 部署、Grafana 数据分析系统、JMeter 实时结果收集 | 🟢 进行中（JMeter 参数化 3/10；性能监控 L1 3/5、L2 6/6） |
 | L3 | JMeter 分布式与 Beanshell / 性能监控·NGinx 与数据库 | 分布式加压机制、调试方法、Beanshell 开发、自定义 jar、Nginx 性能数据监控 | ⬜ 待学 |
 | L4 | JMeter 微服务压测 / 性能瓶颈分析 | Dubbo / Kafka / PB / TCP / 微服务压测；Nginx·MySQL·Redis·Kafka 瓶颈分析；JVM 数据采集 | ⬜ 待学 |
 | L5 | 性能瓶颈分析·性能剖析与火焰图 | 插件机制与源码分析、全链路压测体系、性能测试平台设计、JVM 分析工具、CPU/内存火焰图、eBPF/perf、SkyWalking、App 原生性能分析 | ⬜ 待学 |
